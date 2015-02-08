@@ -18,6 +18,7 @@ energy <- cbind(dates[ind], raw_data[ind,3:9], row.names=NULL)
 
 # delete original data to save memory space
 rm(raw_data)
+rm(ind)
 
 # Start PNG graphics device according to assigment requirements
 png(filename="plot3.png", width=480, height=480)
